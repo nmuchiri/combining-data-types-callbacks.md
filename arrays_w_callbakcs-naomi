@@ -115,4 +115,36 @@ console.log(nums.some(nums2))
 const panagram = ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']
 
 const words= (element)=> element.includes("a") 
+
 console.log(panagram.some(words))
+
+
+// Reduce
+// Add all the numbers in the array together using the reduce method
+
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0]
+
+ const reducer= (accumulator, currentValue) => accumulator + currentValue
+console.log(nums.reduce(reducer))
+
+// concatenate all the words using reduce
+const panagram = ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']
+
+const reducer= (accumulator, currentValue) =>
+accumulator + currentValue + " + "
+console.log(panagram.reduce(reducer))
+
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0]
+
+nums.sort()
+console.log(nums)
+
+sort in ascending order
+
+nums.sort((a,b)=> a-b)
+console.log(nums)
+
+// sort in descending order
+
+nums.sort((a,b)=> b-a)
+console.log(nums)
