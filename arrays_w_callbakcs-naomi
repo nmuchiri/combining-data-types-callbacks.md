@@ -1,0 +1,118 @@
+const greaterThanZero = (currentValue) => currentValue >=0;
+
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0]
+
+console.log(nums.every(greaterThanZero));
+
+
+const shorterThan8 = (currentValue)=> currentValue <=8
+
+const panagram = ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']
+
+console.log(panagram.every(shorterThan8))
+
+
+// Filter
+// filter the array for numbers less than 4
+
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0]
+
+const result = nums.filter(num => num < 4);
+
+console.log(result);
+[ 1, 2, 3, 0 ]
+
+
+// filter words that have an even length
+
+const panagram = ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']
+
+const result= panagram.filter(word =>word.length %2 === 0)
+console.log(result)
+
+//[ 'over', 'lazy' ]
+
+
+// Find
+// Find the first value divisible by 5
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0]
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0]
+
+const found = nums.find(element => element %5 ===0);
+
+console.log(found);
+
+5
+
+// find the first word that is longer than 5 characters
+
+const panagram = ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']
+
+const found = panagram.find(element => element.length >5)
+
+console.log(found)
+
+// undefined
+
+// Find Index
+
+// find the index of the first number that is divisible by 3
+ const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0]
+
+ const div3=(element)=> element % 3 === 0
+  console.log(nums.findIndex(div3))
+
+
+
+// find the index of the first word that is less than 2 characters long
+
+const panagram = ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']
+
+const word= (words)=> words < 2
+
+console.log(panagram.findIndex(word))
+
+// For Each
+// console.log each value of the nums array multiplied by 3
+
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0]
+
+nums.forEach(element => console.log(element * 3))
+
+console.log each word with an exclamation point at the end of it
+
+const panagram = ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']
+
+panagram.forEach( element => console.log(element + "!"))
+
+
+// Map
+// make a new array of each number multiplied by 100
+
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0]
+const map=nums.map( x => x * 100)
+
+console.log(map)
+
+
+make a new array of all the words in all uppercase
+
+const panagram = ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']
+
+const map2= panagram.map( x => x.toUpperCase())
+
+console.log(map2)
+
+// Some
+// Find out if some numbers are divisible by 7
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0]
+
+const nums2= (element) => element % 7 === 0
+console.log(nums.some(nums2))
+
+
+// Find out if some words have the letter a in them
+const panagram = ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']
+
+const words= (element)=> element.includes("a") 
+console.log(panagram.some(words))

@@ -10,7 +10,7 @@ make the code very simple to read
 Don't create code for features that you won't need
 
 // Do the simplest thing that could possibly work
-simlpicity in code design is very important. It keeps the code clean
+simplicity in code design is very important. It keeps the code clean
 
 
 // Don't make me think
@@ -29,7 +29,7 @@ Don't try to make your code run/upload faster than it is before you've made sure
 
 // Separation of concerns
 
-this is connected to single responsibility principle where different areas of functionnality should be governed by different and minimally overlapping modules of code
+this is connected to single responsibility principle where different areas of functionality should be governed by different and minimally overlapping modules of code
 
 // Which ones surprise you (if any)?
 none of the principles above surprise me. They all make sense theoretically. 
@@ -42,14 +42,14 @@ const f = l => {
   // a function f is created with a parameter called l
   let es = 0, p = 0, c = 1, n = 0
 // console.log(n)
-// this line creates four variables. These varibles are named es, p, c and n. They are all set to the values of 0 except c which is set to the value of 1
+// this line creates four variables. These variables are named es, p, c and n. They are all set to the values of 0 except c which is set to the value of 1
 
   while (c <= l) {
-// a conditonal statement where variable c is less than of equal to l
+// a conditional statement where variable c is less than of equal to l
 
     n = c + p;
 
-    // if c is less than or equal to parameter l then varible n is equal to varible c and p added together
+    // if c is less than or equal to parameter l then variable n is equal to variable c and p added together
     [c, p] = [n, c]
     // don't really understand what this line is doing
     // There's an array with the values of c and p in it which is equalized to another array with the values of n and c in it
